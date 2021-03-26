@@ -29,6 +29,7 @@ def getEggMoves(pokemon):
     for item in items:
         name = item.text.strip()
         output.append(name)
+    return output
 
 # Task 3: Create a regex expression that will find all the times that have these formats: @2pm @5 pm @10am
 # Return a list of these times without the '@' symbol. E.g. ['2pm', '5 pm', '10am']
@@ -43,6 +44,7 @@ def findLetters(sentences):
     for sentence in sentences:
         x = re.findall(reg, sentence)
         output.extend(x)
+    return output
     
     # find all the words that match the regular expression in each sentence
        
@@ -51,8 +53,6 @@ def findLetters(sentences):
 
 
     #return the list of the last letter of all words that begin or end with a capital letter
-    reg2 = r"\b[A-Z][a-z]+\b"
-    reg3 = r"\b[a-z]+[A-Z]\b"
 
 
 
